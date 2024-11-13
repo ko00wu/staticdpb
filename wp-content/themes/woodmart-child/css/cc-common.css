@@ -1,0 +1,401 @@
+/* header */
+/* .whb-header {
+  margin-bottom: 0 !important;
+}
+.main-page-wrapper {
+  margin-top: 0;
+  padding-top: 0;
+} */
+
+/* wishlit */
+.wishlist_products_counter {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wishlist_products_counter:before {
+  content: '\e909' !important;
+  font-size: 30px !important;
+  margin-right: 0;
+}
+.wishlist_products_counter_text {
+  display: none;
+}
+.wishlist_products_counter_number {
+  /* position: absolute;
+  right: 6px;
+  bottom: -1px;
+  display: grid;
+  border-radius: 50%;
+  background: rgb(153 67 134);
+  color: #fff;
+  place-items: center;
+  padding: 3px 2px;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 16px;
+  min-height: 16px; */
+  display: inline-block;
+  padding: 0 2px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: var(--wd-primary-color);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 19px;
+}
+
+@media (max-width: 576px) {
+    /* 适合大多数手机的样式 */
+	.wishlist_products_counter:before {
+		font-size: 20px !important;
+	}
+	.wishlist_products_counter_number {
+		font-size: 8px;
+		width: 15px;
+		height: 15px;
+		padding: 0;
+		line-height: 15px;
+	}
+	.wd-header-cart .wd-tools-icon.wd-icon-alt:before{
+		font-size: 14px;
+	}
+	.wd-header-cart.wd-design-4 .wd-cart-number{
+		font-size: 8px !important;
+		width: 15px !important;
+		height: 15px !important;
+		padding: 0 !important;
+		line-height: 15px !important;
+	}
+	.wd-header-cart a {
+        padding-left: 0 !important;
+    }
+}
+
+/* loop product */
+.product-wrapper {
+  position: relative;
+  border-radius: 0.5rem;
+  --tw-shadow: 0px 1px 11px rgba(212, 173, 186, .4);
+  --tw-shadow-colored: 0px 1px 11px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  height: 100% !important;
+}
+
+.product-wrapper:hover {
+	--tw-scale-x: 1.015;
+    --tw-scale-y: 1.015;
+    -webkit-transform: scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transform: scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 1280px) {
+	.product-wrapper {
+		padding: 0 1rem !important;
+	}
+}
+
+.product-element-addon {
+  display: flex;
+  height: 42px;
+  justify-content: space-between;
+}
+
+.product-element-addon .wd-style-icon > a {
+  color: #f24559;
+  width: auto;
+  height: auto;
+}
+
+.product-element-addon .wd-style-icon > a:before {
+  font-family: Material Icons;
+  content: '\e87e';
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.product-image-link .product-labels {
+  display: none;
+}
+
+.product-element-addon .wd-style-icon > a.added:before {
+  content: '\e87d';
+}
+
+.product-element-addon .wishbtn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.product-labels-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.product-labels-wrapper .product-labels {
+  position: relative;
+  top: 0;
+  flex-direction: row;
+  inset-inline-start: auto;
+  max-width: none;
+}
+
+.wd-product .hover-img {
+  background-color: #fff;
+}
+
+.product-element-bottom {
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+@media (min-width: 1280px) {
+	.product-element-bottom {
+		text-align: left;
+	}
+}
+
+.product-element-bottom .price {
+  margin-top: 0 !important;
+}
+
+.product-element-bottom .price .amount:not(del .amount) {
+  color: #333;
+  font-weight: 700;
+}
+
+.product-element-bottom .star-rating {
+  align-self: flex-start !important;
+}
+
+.product-element-top .wrapp-buttons {
+  display: none;
+}
+
+.product-element-top {
+	height: 18.75rem;
+	border-radius: 0 !important;
+}
+
+.product-element-top:hover .hover-img {
+	opacity: 0 !important;
+    transform: none !important;
+}
+
+
+.wd-product .product-image-link {
+	display: flex !important;
+	height: 100%;
+    background: rgb(245 245 245);
+    justify-content: center;
+    align-items: center;
+}
+
+.wd-product :is(.product-image-link,.hover-img) img {
+	max-height: 100%;
+    object-fit: contain;
+}
+
+.wd-product .hover-img>a {
+	display: flex !important;
+	height: 100%;
+	align-items: center;
+}
+
+.loop-star-reviews-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 1280px) {
+	.loop-star-reviews-container {
+		justify-content: flex-start;
+	}
+}
+
+.loop-review-count {
+	font-size: 0.85em;
+}
+
+.cus-loop-btn-container {
+  padding: 0 0 1.25rem;
+}
+
+.product-element-bottom{
+	font-size: .875rem !important;
+    line-height: 1.25rem !important;
+}
+
+.cus-loop-btn-container .cus-loop-add-to-cart {
+  font-size: 12px;
+  border-radius: 1.875rem;
+  background-color: black;
+  color: #ffffff;
+  min-height: auto;
+}
+
+.cus-loop-btn-container .cus-loop-add-to-cart .icon-cart {
+  width: 12px;
+  margin-right: 0.25rem;
+}
+
+.cus-loop-btn-container .cus-loop-add-to-cart:hover {
+  background-color: transparent !important;
+  color: rgb(0, 0, 0) !important;
+  box-shadow: inset 0 0 0 2px currentColor !important;
+}
+
+.cus-loop-wishlist-btn {
+  width: 24px;
+  height: 20px;
+  color: #f24559;
+}
+
+.cus-loop-wishlist-btn:hover {
+  color: #f24559;
+}
+
+.cus-loop-wishlist-btn:before {
+  font-size: 24px !important;
+}
+@media (max-width: 350px) {
+	.cus-loop-btn-container .cus-loop-add-to-cart {
+		padding: 3px 10px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.product-element-bottom{
+		font-size: 1.125rem !important;
+        line-height: 1.75rem !important;
+	}
+	.cus-loop-btn-container .cus-loop-add-to-cart .icon-cart {
+	  width: 22px;
+	}
+	
+	.cus-loop-btn-container .cus-loop-add-to-cart {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.cus-loop-btn-container .cus-loop-add-to-cart {
+		width: 100%;
+  		padding: 0.875rem 2rem;
+	}
+}
+
+.elementor-accordion-item {
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  background: rgb(240 236 254);
+  border: none !important;
+}
+
+.elementor-tab-title a {
+  color: rgb(39 39 39);
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.elementor-accordion .elementor-tab-content {
+  border-top: none !important;
+}
+
+.elementor-accordion-icon path {
+  fill: #fff;
+}
+.elementor-accordion-icon span {
+  width: 1.5rem;
+  height: 1.5rem;
+  place-items: center;
+  background: #994386;
+  border-radius: 7px;
+}
+
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon span.elementor-accordion-icon-closed,.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon span.elementor-accordion-icon-opened {
+  display: grid;
+}
+
+.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon span.elementor-accordion-icon-opened{
+  background: #452f86;
+}
+
+.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon-closed {
+  display: none !important;
+}
+
+.elementor-accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.elementor-toggle-item {
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  background: #ffe4e1;
+}
+
+.elementor-toggle .elementor-tab-title {
+  border-bottom: none !important;
+}
+
+.elementor-toggle .elementor-tab-content {
+  border-bottom: none !important;
+}
+
+.elementor-tab-title a {
+  color: rgb(39 39 39);
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.elementor-toggle .elementor-tab-title .elementor-toggle-icon {
+    width: auto !important;
+}
+
+.elementor-toggle-icon path {
+  fill: #fff;
+}
+
+.elementor-toggle-icon span {
+  width: 1.5rem;
+  height: 1.5rem;
+  place-items: center;
+  background: #e9967a;
+  border-radius: 7px;
+}
+
+.elementor-toggle .elementor-tab-title .elementor-toggle-icon svg {
+  margin-inline-start: 0 !important;
+}
+
+
+.elementor-toggle .elementor-tab-title .elementor-toggle-icon span.elementor-toggle-icon-closed,.elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon span.elementor-toggle-icon-opened {
+  display: grid;
+}
+
+.elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon span.elementor-toggle-icon-opened{
+  background: #cd5c5c;
+}
+
+.elementor-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon-closed {
+  display: none !important;
+}
+
+.elementor-toggle-item:last-child {
+  margin-bottom: 0;
+}
+
+.elementor-tab-content a{
+   text-decoration-line: underline;
+}

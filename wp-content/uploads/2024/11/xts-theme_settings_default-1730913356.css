@@ -1,0 +1,146 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: "woodmart-font";
+	src: url("/wp-content/themes/woodmart/fonts/woodmart-font-2-400.woff2?v=7.4.3.3") format("woff2");
+}
+
+:root {
+	--wd-header-banner-h: 40px;
+	--wd-text-font: "Montserrat", Arial, Helvetica, sans-serif;
+	--wd-text-font-weight: 400;
+	--wd-text-color: #272727;
+	--wd-text-font-size: 16px;
+	--wd-title-font: "Lexend", Arial, Helvetica, sans-serif;
+	--wd-title-font-weight: 500;
+	--wd-title-color: #242424;
+	--wd-entities-title-font: "Lexend", Arial, Helvetica, sans-serif;
+	--wd-entities-title-font-weight: 700;
+	--wd-entities-title-color: #333333;
+	--wd-entities-title-color-hover: rgb(51 51 51 / 65%);
+	--wd-alternative-font: "Lato", Arial, Helvetica, sans-serif;
+	--wd-widget-title-font: "Lexend", Arial, Helvetica, sans-serif;
+	--wd-widget-title-font-weight: 500;
+	--wd-widget-title-transform: none;
+	--wd-widget-title-color: #333;
+	--wd-widget-title-font-size: 16px;
+	--wd-header-el-font: "Montserrat", Arial, Helvetica, sans-serif;
+	--wd-header-el-font-weight: 700;
+	--wd-header-el-transform: none;
+	--wd-header-el-font-size: 16px;
+	--wd-brd-radius: 10px;
+	--wd-primary-color: rgb(34,71,204);
+	--wd-alternative-color: rgb(171,186,129);
+	--wd-link-color: #333333;
+	--wd-link-color-hover: #242424;
+	--btn-default-bgcolor: #f7f7f7;
+	--btn-default-bgcolor-hover: #efefef;
+	--btn-accented-bgcolor: rgb(34,71,204);
+	--btn-accented-bgcolor-hover: rgb(31,64,185);
+	--btn-transform: none;
+	--wd-form-brd-width: 1px;
+	--notices-success-bg: #459647;
+	--notices-success-color: #fff;
+	--notices-warning-bg: #E0B252;
+	--notices-warning-color: #fff;
+}
+.woodmart-woocommerce-layered-nav .wd-scroll-content {
+	max-height: 223px;
+}
+div.wd-popup.wd-age-verify {
+	max-width: 500px;
+}
+.wd-popup.wd-promo-popup {
+	background-color: #111111;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left center;
+}
+div.wd-popup.wd-promo-popup {
+	max-width: 800px;
+}
+.header-banner {
+	background-color: rgb(227,162,141);
+	background-image: none;
+}
+.page-title-default {
+	background-color: rgb(247,243,240);
+	background-image: none;
+	background-size: cover;
+	background-position: center center;
+}
+.footer-container {
+	background-color: rgb(181, 181, 181);
+	background-image: none;
+}
+html .wd-nav-mobile > li > a {
+	text-transform: none;
+}
+html .wd-buy-now-btn {
+	background: rgb(160,194,105);
+}
+html .wd-buy-now-btn:hover {
+	background: rgb(131,172,43);
+}
+body, [class*=color-scheme-light], [class*=color-scheme-dark], .wd-search-form[class*="wd-header-search-form"] form.searchform, .wd-el-search .searchform {
+	--wd-form-bg: rgb(255,255,255);
+}
+.product-labels .product-label.onsale {
+	background-color: rgb(126,164,222);
+	color: rgb(255,255,255);
+}
+.product-labels .product-label.new {
+	background-color: rgb(171,186,129);
+	color: rgb(255,255,255);
+}
+.product-labels .product-label.featured {
+	background-color: rgb(227,162,141);
+	color: rgb(255,255,255);
+}
+div.wd-popup.popup-quick-view {
+	max-width: 920px;
+}
+.woocommerce-product-gallery {
+	--wd-gallery-gap: 16px;
+}
+.woocommerce-product-gallery.thumbs-position-left {
+	--wd-thumbs-width: 110px;
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--wd-header-banner-h: 40px;
+	}
+
+}
+:root{
+--wd-container-w: 1422px;
+--wd-form-brd-radius: 5px;
+--btn-default-color: #333;
+--btn-default-color-hover: #333;
+--btn-accented-color: #fff;
+--btn-accented-color-hover: #fff;
+--btn-default-brd-radius: 5px;
+--btn-default-box-shadow: none;
+--btn-default-box-shadow-hover: none;
+--btn-accented-brd-radius: 5px;
+--btn-accented-box-shadow: none;
+--btn-accented-box-shadow-hover: none;
+}
+
+@media (min-width: 1439px) {
+.platform-Windows .wd-section-stretch > .elementor-container {
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+@media (min-width: 1422px) {
+html:not(.platform-Windows) .wd-section-stretch > .elementor-container {
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+

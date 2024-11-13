@@ -1,0 +1,24 @@
+.elementor-2793 .elementor-element.elementor-element-acf443b{--display:flex;--background-transition:0.3s;}/* Start custom CSS for html, class: .elementor-element-7b27a75 */.track-form-container {
+    display: flex;
+}
+.track-p {
+  margin-top: 1rem;
+}
+.track-p span{
+    color: #002e87;
+    text-decoration: none;
+    font-weight: 700;
+}
+#YQNum{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+input[type="button"]{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgb(233, 150, 122);
+    color: #fff;
+}
+#YQContainer {
+    margin-top: 1rem;
+}/* End custom CSS */
